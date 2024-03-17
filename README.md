@@ -38,6 +38,12 @@ Claude	        Snakes on a Plane
 
 ### 🧸💬 Visulaization
 
+🐑💬 ➰ How do Andy to interact with Claude⁉️ </br>
+🥺⁉️ Are they mercy the Mean girl⁉️ </br>
+🐐💬️‼️ No, they are watching Anaconda️ the hands of the Jungle‼️ </br>
+🦁💬️ Andy has the advantage of approximate nodes connected to overall nodes they are sorted by the input. If you want to know people you need to talk to Andy. </br>
+🐑💬 ➰ This answer can is easy with graph mode, now try to do it with text mode in the text input format.  </br>
+
 <p align="center" width="100%">
     <img width="100%" src="https://github.com/jkaewprateep/lessonfrom_Applied_Social_Network_Analysis_in_Python/blob/main/01.png">
 </p>
