@@ -21,8 +21,19 @@ nx.draw(answer, with_labels=True, labels=labels, node_color=nodes.iloc[:,1]);   
 
 ### 🧸💬 Output
 
+🐑💬 ➰ #Employee is nodes when Movies is edges contain categorize that is interact by nodes. </br>
+🧸💬 Edges had property but they do not interact, nodes need property to performance. </br>
 ```
 Graph with 19 nodes and 24 edges
+---
+#Employee	Movie
+Andy	        Anaconda
+Andy	        Mean Girls
+Andy	        The Matrix
+Claude	        Anaconda
+Claude	        Monty Python and the Holy Grail
+Claude	        Snakes on a Plane
+. . .
 ```
 
 ### 🧸💬 Visulaization
