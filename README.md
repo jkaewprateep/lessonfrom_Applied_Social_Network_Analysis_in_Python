@@ -100,6 +100,8 @@ Graph with 19 nodes and 24 edges
 </p>
 
 ### 🧸💬 Creating and manipulating graph with nodes connections property.
+💃( 👩‍🏫 )💬 Sorted of connections property can determine expecting node for the development of connectivity by adding a traversal node by passing the strong nodes so the graph can have more properties and shared connectivity. </br>
+🦤💬 In the police investigation, the strongest connectivity is a special relationship because criminals are smart they select to create the most performance connectivity way to work with safe and edges reach communications. Attach and perform is one technique to protect and learn from network connectivity because it is human relationships. </br>
 
 ```
 G = answer_three()
