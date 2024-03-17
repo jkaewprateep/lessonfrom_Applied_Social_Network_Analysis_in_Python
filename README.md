@@ -62,25 +62,25 @@ Claude	        Snakes on a Plane
 ```
 answer = answer_two();
 
-# 🧸💬 Define a graph from simple file, using file reader and Pandas.
-labels = {n: n for n in answer.nodes};
-nodes = pd.DataFrame( answer.nodes );
-nodes.columns = ["Node_name"]
+# 🧸💬 Define a graph from simple file, using file reader and Pandas.                 
+labels = {n: n for n in answer.nodes};                                                 # 🧸💬 Create label array collection from nodes.
+nodes = pd.DataFrame( answer.nodes );                                                  # 🧸💬 Saved nodes and property into a dataset.
+nodes.columns = ["Node_name"]                                                          # 🧸💬 Reanme of the node column.
 
-types = nx.get_node_attributes(answer, "type");
-print( types );
+types = nx.get_node_attributes(answer, "type");                                        # 🧸💬 Find the node attributes.
+print( types );                                                                        # 🧸💬 See nodes object type.
 
-nodes["type"] = nodes["Node_name"].apply( lambda x : types[x] if x in types.keys() else np.NaN );
-nodes["labels"] = nodes["Node_name"].apply( lambda x : types[x] if x in types.keys() else x );
-nodes["colours"] = nodes["Node_name"].apply( lambda x : "red" if x in types.keys() else "blue" );
+nodes["type"] = nodes["Node_name"].apply( lambda x : types[x] if x in types.keys() else np.NaN );   # 🧸💬 Convert and save type to column.
+nodes["labels"] = nodes["Node_name"].apply( lambda x : types[x] if x in types.keys() else x );      # 🧸💬 Convert and save label to column.
+nodes["colours"] = nodes["Node_name"].apply( lambda x : "red" if x in types.keys() else "blue" );   # 🧸💬 Convert and save colours to column.
 
-dict_label = { };
-for idx, node in enumerate(labels) :
-    dict_label[node] = nodes["labels"].iloc[idx];
+dict_label = { };                                                                       # 🧸💬 Create new empty dictionary for plotting.
+for idx, node in enumerate(labels) :                                                    # 🧸💬 Iterates node from a labels array.
+    dict_label[node] = nodes["labels"].iloc[idx];                                       # 🧸💬 Convert of labels to dictionary for plotting. 
 
 # 🧸💬 I try to manage the property of the nodes graph, they are in dictionary. 
-nx.draw(answer, with_labels=True, labels=dict_label, node_color=nodes["colours"].to_numpy() );
-nodes.head( 5 )
+nx.draw(answer, with_labels=True, labels=dict_label, node_color=nodes["colours"].to_numpy() );      # 🧸💬 Plotting.
+nodes.head( 5 )                                                                                     # 🧸💬 Print out sample.
 ```
 
 ### 🧸💬 Output
