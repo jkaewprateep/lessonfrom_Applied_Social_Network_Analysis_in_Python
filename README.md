@@ -8,6 +8,7 @@ University of Michigan - Applied Social Network Analysis in Python
 🦭💬 How to find the centre of the collection fastest way⁉️ </br>
 🐑💬 ➰ Possible by visualization, this sense is processing when they create brain signals learning. </br>
 🐯💬 From centre of the graph we can estimate transfer rates, and most frequent rates, add or delete nodes, and find neighbor nodes and branch nodes that we can interact with less effect overall. </br>
+🐐💬 Andy's favorites movie is Mean Girl ⁉️ 🥺💬 Sometimes the girl is so mean and we talk in English.  </br>
 ```
 answer = answer_one();                                                                 # 🧸💬 Output from "assets/Employee_Movie_Choices.txt". 
 
