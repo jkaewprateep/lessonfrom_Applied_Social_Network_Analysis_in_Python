@@ -3,8 +3,11 @@ University of Michigan - Applied Social Network Analysis in Python
 
 ## This note we aim to study the categorize problems with tree graph analysis, visualization for materials study, and verification of ideas. Some visualization presents you the velocity of nodes graph in a graphical mode that is faster to understand finding the center point and differentiate multiple path inputs.
 
-### 🧸💬 Creating and manipulate graph
+### 🧸💬 Creating and manipulating graph
 
+🦭💬 How to find the centre of the collection fastest way⁉️ </br>
+🐑💬 ➰ Possible by visualization, this sense is processing when they create brain signals learning. </br>
+🐯💬 From centre of the graph we can estimate transfer rates, and most frequent rates, add or delete nodes, and find neighbor nodes and branch nodes that we can interact with less effect overall. </br>
 ```
 answer = answer_one();                                                                 # 🧸💬 Output from "assets/Employee_Movie_Choices.txt". 
 
