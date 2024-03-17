@@ -128,6 +128,12 @@ EdgeDataView([('Frida', 'Pablo', {'weight': 2}), ('Frida', 'Vincent', {'weight':
 💃( 👩‍🏫 )💬 Identical identification, it is not necessary to select the peak values or identical nodes in somewhat matter of way but these identical nodes need to present in the same manner in samples and can vary by property or neighbors. </br>
 🦤💬 External interactions and internal interactions, there are property selection and response reactions when the property is easy to identify but response feedback properties such as addition number, multiplication, and order in the sequences. In a vending machine for example summing up the condition of exchange Baht coins from remain amount from input and costs is not a direct response from the vending machine. Some questions such as why the vending machine always returns one Bath coin for exchange often than two Bath coins even re-programming that is because of a chance they are selected from one bath and two Bath are not too different and multiplication array can support the preference values. </br>    
 
+### 🧸💬 Machine learning and vending machine, add preference to solved one Bath and two Bath coins exchange problem.
+
+<p align="center" width="100%">
+    <img width="100%" src="https://github.com/jkaewprateep/lessonfrom_Applied_Social_Network_Analysis_in_Python/blob/main/08.png">
+</p>
+
 ```
 print(ans_one)
 # 🧸💬 Define a graph from simple file, using file reader and Pandas.
