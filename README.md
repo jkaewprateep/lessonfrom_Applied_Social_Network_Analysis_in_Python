@@ -44,6 +44,8 @@ Claude	        Snakes on a Plane
 🦁💬️ Andy has the advantage of approximate nodes connected to overall nodes they are sorted by the input. If you want to know people you need to talk to Andy. </br>
 🐑💬 ➰ This answer can is easy with graph mode, now try to do it with text mode in the text input format.  </br>
 
+#### 🧸💬 Example of graph problem by finding communication nodes or connected nodes.
+
 🐑💬 ➰ If Andy does not watch Anaconda then he does not have the same favorite movie as Claude but Frida, but Claude has his favorite movie Snakes on a Plane same as Georgia and Andy.  </br>
 
 <p align="center" width="100%">
