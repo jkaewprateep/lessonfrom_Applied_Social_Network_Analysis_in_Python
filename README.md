@@ -124,7 +124,9 @@ EdgeDataView([('Frida', 'Pablo', {'weight': 2}), ('Frida', 'Vincent', {'weight':
 - - -
 ## Networks connectivity, graph domain problem to solution precise identify of selection conditions by target properties, connectivity, and conditions.
 
-🦭💬 In complex connectivity nodes, we find identical nodes for the presence of a group or category identification. There is some potential to create of category when there are multiple of nodes that stand out for multiple times of selection and identification. That means they had property and their relationships can filter or work with conditions or rules. </br>
+🦭💬 In complex connectivity nodes, we find identical nodes for the presence of a group or category identification. There is some potential to create of the category when there are multiple of nodes that stand out for multiple times of selection and identification. That means they had property and their relationships can filter or work with conditions or rules. </br>
+💃( 👩‍🏫 )💬 Identical identification, it is not necessary to select the peak values or identical nodes in somewhat matter of way but these identical nodes need to present in the same manner in samples and can vary by property or neighbors. </br>
+🦤💬 External interactions and internal interactions, there are property selection and response reactions when the property is easy to identify but response feedback properties such as addition number, multiplication, and order in the sequences. In a vending machine for example summing up the condition of exchange Baht coins from remain amount from input and costs is not a direct response from the vending machine. Some questions such as why the vending machine always returns one Bath coin for exchange often than two Bath coins even re-programming that is because of a chance they are selected from one bath and two Bath are not too different and multiplication array can support the preference values. </br>    
 
 ```
 print(ans_one)
