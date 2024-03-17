@@ -6,13 +6,13 @@ University of Michigan - Applied Social Network Analysis in Python
 ### 🧸💬 Creating and manipulate graph
 
 ```
-answer = answer_one();
+answer = answer_one();                                                                 # 🧸💬 Output from "assets/Employee_Movie_Choices.txt". 
 
 # 🧸💬 Define a graph from simple file, using file reader and Pandas.
-labels = {n: n for n in answer.nodes};
-nodes = pd.DataFrame( answer.nodes );
-nodes["Colours"] = nodes[0].apply( lambda x : "red" if x == "Employee" else "blue" );
-nx.draw(answer, with_labels=True, labels=labels, node_color=nodes.iloc[:,1]);
+labels = {n: n for n in answer.nodes};                                                 # 🧸💬 Create labels collection from output nodes.
+nodes = pd.DataFrame( answer.nodes );                                                  # 🧸💬 Stored nodes and node property into a dataset.
+nodes["Colours"] = nodes[0].apply( lambda x : "red" if x == "Employee" else "blue" );  # 🧸💬 Assign colour property to nodes property.
+nx.draw(answer, with_labels=True, labels=labels, node_color=nodes.iloc[:,1]);          # 🧸💬 Draws nodes with label and property.
 ```
 
 ### 🧸💬 Output
