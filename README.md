@@ -226,6 +226,7 @@ MultiDiGraph with 126 nodes and 82130 edges
 ```
 
 ### 🧸💬 Visualization - strongly connected graph.
+🐐💬 For experiment purposes, the selection of none strongly connected nodes is identification but selecting strongly connected nodes is to find relative groups or periods as in periodic tables. </br>
 
 <p align="center" width="100%">
     <img width="100%" src="https://github.com/jkaewprateep/lessonfrom_Applied_Social_Network_Analysis_in_Python/blob/main/05.png">
