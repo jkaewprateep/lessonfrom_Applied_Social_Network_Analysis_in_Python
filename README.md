@@ -136,6 +136,7 @@ EdgeDataView([('Frida', 'Pablo', {'weight': 2}), ('Frida', 'Vincent', {'weight':
 🦭💬 An alternate way is machine learning, they had internal preferences and external preferences from setting with synchronization, do not generate a predictable response machine. </br>
 🦤💬 There is a reason behind this condition, commercial and business are required to create of development in the same area but they cannot directly infer into rules but by each turn, they add creativity into requirements to create a good way of competition. They had high competitiveness business competitors but they turned into creative ways. </br>
 💃( 👩‍🏫 )💬 In example, there are electronics detective hacks of bank account balance payment from new type of vending machines and they need to have the background of data integrations in financial banking business to use of its time exceed capable before updated the event callback. </br>
+👧💬 🎈 My reporter says found one old lady try to do it near his school. 👵...💸 🥺💬 It is just a timeout aunties you cannot cancel because the machine does not have events try using next method to reset. ( Some bare foot guy finding for food found her ) </br>
 
 <p align="center" width="100%">
     <img width="60%" src="https://github.com/jkaewprateep/lessonfrom_Applied_Social_Network_Analysis_in_Python/blob/main/08.png">
