@@ -85,6 +85,9 @@ nodes.head( 5 )
 
 ### 🧸💬 Output
 
+👧💬 🎈 Who is the centre and who are the strongest connections⁉️ </br>
+🦭💬 Find the most communication node and attach a new node to the strongest nearby connection node. A new node can communicate with centre node with a single property same as Vincent and had high selection scores when challenging centre node or a higher possibility for route selection. </br>
+
 ```
 Graph with 19 nodes and 24 edges
 {'Andy': 'employee', 'Anaconda': 'movie', 'Mean Girls': 'movie', 'The Matrix': 'movie', 'Claude': 'employee', 'Monty Python and the Holy Grail': 'movie', 'Snakes on a Plane': 'movie', 'Frida': 'employee', 'The Shawshank Redemption': 'movie', 'The Social Network': 'movie', 'Georgia': 'employee', 'Joan': 'employee', 'Forrest Gump': 'movie', 'Kung Fu Panda': 'movie', 'Lee': 'employee', 'Pablo': 'employee', 'The Dark Knight': 'movie', 'Vincent': 'employee', 'The Godfather': 'movie'}
