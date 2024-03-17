@@ -145,26 +145,31 @@ EdgeDataView([('Frida', 'Pablo', {'weight': 2}), ('Frida', 'Vincent', {'weight':
 ```
 print(ans_one)
 # 🧸💬 Define a graph from simple file, using file reader and Pandas.
-labels = {n: n for n in ans_one.nodes};
+labels = {n: n for n in ans_one.nodes};                             # 🧸💬 Create an array collection from nodes.
 
-nodes = pd.DataFrame( ans_one.nodes );
+nodes = pd.DataFrame( ans_one.nodes );                              # 🧸💬 Stored nodes property into a dataset.
 
 # EdgeDataView([('1', '2', {'time': 1285658811}), ('1', '3', {'time': 1285657801})
+# 🧸💬 Stored node data output into a dataset with column names.
 dataset = pd.DataFrame(ans_one.edges(data=True), columns=["Sender", "Recipient", "time"])
+# 🧸💬 Transfrom first element array into value and stored into dataset filed.
 dataset["time"] = dataset["time"].map( lambda x : x["time"] );
 
-
-colours = ["red", "green", "blue", "yellow", "brown"];
-dataset["index_num"] = dataset.index;
+colours = ["red", "green", "blue", "yellow", "brown"];              # 🧸💬 Create colours array.
+dataset["index_num"] = dataset.index;                               # 🧸💬 Create an index number column.
+# 🧸💬 Create a Node column from object type, node, or else.
 dataset["Node"] = dataset["Sender"].apply( lambda x : True if x in labels.keys() else False );
+# 🧸💬 Create a Colours column and assign of colour name for node.
 dataset["Colours"] = dataset["Sender"] .apply( lambda x : colours[ int(x) % 5] );
 
-dataset = dataset[["Sender", "Colours"]];
-dataset = dataset.groupby(by="Sender").first();
-nodes_colours = list(dataset.iloc[:, 0].to_numpy());
-nodes_colours = nodes_colours + ( 167 - len(nodes_colours) ) * ["red"]
+dataset = dataset[["Sender", "Colours"]];                           # 🧸💬 Select dataset fields.
+# 🧸💬 Group by sender duplicated select first.
+dataset = dataset.groupby(by="Sender").first();                     
+nodes_colours = list(dataset.iloc[:, 0].to_numpy());                   # 🧸💬 Phase a list of sender.
+nodes_colours = nodes_colours + ( 167 - len(nodes_colours) ) * ["red"] # 🧸💬 Padding for plots.
 
 ### drawings
+# 🧸💬 Plotting with label and node colour.
 nx.draw(ans_one, with_labels=True, labels=labels, node_color=nodes_colours);
 ```
 
