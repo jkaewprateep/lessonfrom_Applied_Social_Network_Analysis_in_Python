@@ -99,6 +99,22 @@ Graph with 19 nodes and 24 edges
     <img width="100%" src="https://github.com/jkaewprateep/lessonfrom_Applied_Social_Network_Analysis_in_Python/blob/main/02.png">
 </p>
 
+### 🧸💬 Creating and manipulating graph with nodes connections property.
+
+```
+G = answer_three()
+plot_graph(G, weight_name="weight")
+G.edges(data = True)
+```
+
+### 🧸💬 Output
+
+```
+EdgeDataView([('Frida', 'Pablo', {'weight': 2}), ('Frida', 'Vincent', {'weight': 2}), ('Frida', 'Andy', {'weight': 1}), ('Georgia', 'Andy', {'weight': 1}), ('Georgia', 'Claude', {'weight': 3}), ('Lee', 'Andy', {'weight': 1}), ('Lee', 'Joan', {'weight': 3}), ('Vincent', 'Pablo', {'weight': 1}), ('Andy', 'Pablo', {'weight': 1}), ('Andy', 'Joan', {'weight': 1}), ('Andy', 'Claude', {'weight': 1})])
+```
+
+### 🧸💬 Visulaization
+
 <p align="center" width="100%">
     <img width="100%" src="https://github.com/jkaewprateep/lessonfrom_Applied_Social_Network_Analysis_in_Python/blob/main/03.png">
 </p>
