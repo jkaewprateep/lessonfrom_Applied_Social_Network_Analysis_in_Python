@@ -122,17 +122,118 @@ EdgeDataView([('Frida', 'Pablo', {'weight': 2}), ('Frida', 'Vincent', {'weight':
 </p>
 
 - - -
+
+```
+print(ans_one)
+# 🧸💬 Define a graph from simple file, using file reader and Pandas.
+labels = {n: n for n in ans_one.nodes};
+
+nodes = pd.DataFrame( ans_one.nodes );
+
+# EdgeDataView([('1', '2', {'time': 1285658811}), ('1', '3', {'time': 1285657801})
+dataset = pd.DataFrame(ans_one.edges(data=True), columns=["Sender", "Recipient", "time"])
+dataset["time"] = dataset["time"].map( lambda x : x["time"] );
+
+
+colours = ["red", "green", "blue", "yellow", "brown"];
+dataset["index_num"] = dataset.index;
+dataset["Node"] = dataset["Sender"].apply( lambda x : True if x in labels.keys() else False );
+dataset["Colours"] = dataset["Sender"] .apply( lambda x : colours[ int(x) % 5] );
+
+dataset = dataset[["Sender", "Colours"]];
+dataset = dataset.groupby(by="Sender").first();
+nodes_colours = list(dataset.iloc[:, 0].to_numpy());
+nodes_colours = nodes_colours + ( 167 - len(nodes_colours) ) * ["red"]
+
+### drawings
+nx.draw(ans_one, with_labels=True, labels=labels, node_color=nodes_colours);
+```
+
 <p align="center" width="100%">
     <img width="100%" src="https://github.com/jkaewprateep/lessonfrom_Applied_Social_Network_Analysis_in_Python/blob/main/04.png">
 </p>
+
+```
+print(ans_six)
+# 🧸💬 Define a graph from simple file, using file reader and Pandas.
+labels = {n: n for n in ans_six.nodes};
+
+nodes = pd.DataFrame( ans_six.nodes );
+# # EdgeDataView([('1', '2', {'time': 1285658811}), ('1', '3', {'time': 1285657801})
+dataset = pd.DataFrame(ans_six.edges(data=True), columns=["Sender", "Recipient", "time"])
+dataset["time"] = dataset["time"].map( lambda x : x["time"] );
+
+colours = ["red", "green", "blue", "yellow", "brown"];
+dataset["Node"] = dataset["Sender"].apply( lambda x : True if x in labels.keys() else False );
+dataset["Colours"] = dataset["Sender"] .apply( lambda x : colours[ int(x) % 5] );
+
+dataset = dataset[["Sender", "Colours"]];
+dataset = dataset.groupby(by="Sender").first();
+nodes_colours = list(dataset.iloc[:, 0].to_numpy());
+nodes_colours = nodes_colours + ( 167 - len(nodes_colours) ) * ["red"]
+
+### drawings
+nx.draw(ans_one, with_labels=True, labels=labels, node_color=nodes_colours);
+```
 
 <p align="center" width="100%">
     <img width="100%" src="https://github.com/jkaewprateep/lessonfrom_Applied_Social_Network_Analysis_in_Python/blob/main/05.png">
 </p>
 
+```
+print("***", ans_twelve)
+print("***", ans_six)
+# 🧸💬 Define a graph from simple file, using file reader and Pandas.
+labels = {n: n for n in ans_six.nodes};
+
+nodes = pd.DataFrame( ans_six.nodes );
+
+# # EdgeDataView([('1', '2', {'time': 1285658811}), ('1', '3', {'time': 1285657801})
+dataset = pd.DataFrame(ans_six.edges(data=True), columns=["Sender", "Recipient", "time"])
+dataset["time"] = dataset["time"].map( lambda x : x["time"] );
+
+colours = ["red", "green", "blue", "yellow", "brown"];
+dataset["Node"] = dataset["Sender"].apply( lambda x : True if x in labels.keys() else False );
+dataset["Colours"] = dataset["Sender"] .apply( lambda x : colours[ int(x) % 5] );
+
+dataset = dataset[["Sender", "Colours"]];
+dataset = dataset.groupby(by="Sender").first();
+nodes_colours = list(dataset.iloc[:, 0].to_numpy());
+
+nodes_colours = nodes_colours;
+
+### drawings
+nx.draw(ans_six, with_labels=True, labels=labels, node_color=nodes_colours);
+```
+
 <p align="center" width="100%">
     <img width="100%" src="https://github.com/jkaewprateep/lessonfrom_Applied_Social_Network_Analysis_in_Python/blob/main/06.png">
 </p>
+
+```
+print(ans_thirteen)
+# 🧸💬 Define a graph from simple file, using file reader and Pandas.
+labels = {n: n for n in ans_thirteen.nodes};
+
+nodes = pd.DataFrame( ans_six.nodes );
+
+# # EdgeDataView([('1', '2', {'time': 1285658811}), ('1', '3', {'time': 1285657801})
+dataset = pd.DataFrame(ans_thirteen.edges(data=True), columns=["Sender", "Recipient", "time"])
+dataset["time"] = dataset["time"].map( lambda x : x["time"] );
+
+colours = ["red", "green", "blue", "yellow", "brown"];
+dataset["Node"] = dataset["Sender"].apply( lambda x : True if x in labels.keys() else False );
+dataset["Colours"] = dataset["Sender"] .apply( lambda x : colours[ int(x) % 5] );
+
+dataset = dataset[["Sender", "Colours"]];
+dataset = dataset.groupby(by="Sender").first();
+nodes_colours = list(dataset.iloc[:, 0].to_numpy());
+
+nodes_colours = nodes_colours + (["red"] * 11 );
+
+### drawings
+nx.draw(ans_thirteen, with_labels=True, labels=labels, node_color=nodes_colours);
+```
 
 <p align="center" width="100%">
     <img width="100%" src="https://github.com/jkaewprateep/lessonfrom_Applied_Social_Network_Analysis_in_Python/blob/main/07.png">
