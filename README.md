@@ -55,6 +55,10 @@ Claude	        Snakes on a Plane
 
 ### 🧸💬 Creating and manipulating graph with nodes property.
 
+🐑💬 ➰ How do we select the correct action response to the target node for solving the tree graph problem? We can set the action node as centre node where next to our centre node is the property that matches our actions in the actions list or target estimation. </br>
+🦭💬 Andy's can interact with friends through movies, what are movies Andy likes ⁉️ </br>
+🐯💬 Anaconda, Mean Girls, and The Matrix. He had good spots about the movie selection when Adventure, Comedy, and Sci-fi are impact zones for peak lady somebody do that. </br>
+
 ```
 answer = answer_two();
 
