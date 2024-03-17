@@ -130,6 +130,11 @@ EdgeDataView([('Frida', 'Pablo', {'weight': 2}), ('Frida', 'Vincent', {'weight':
 
 ### 🧸💬 Machine learning and vending machine, add preference to solved one Bath and two Bath coins exchange problem.
 
+🐑💬 ➰ There are multiple answers for some set of answers or numbers to exchange returns, to solve this add the preference or pre-calculation value. </br>
+🦭💬 If the exchange return is 5 Bath the vending machine should return you 5 Bath coin, or two of two Bath coins with one Bath coin or fives of one Bath coins or ... </br>
+🦭💬 Preference is easy to solve this problem with the number of coin types remaining in the system, but it will create a predictable type machine which should be prevented by its design. </br>
+🦭💬 An alternate way is machine learning, they had internal preferences and external preferences from setting with synchronization, do not generate a predictable response machine. </br>
+
 <p align="center" width="100%">
     <img width="60%" src="https://github.com/jkaewprateep/lessonfrom_Applied_Social_Network_Analysis_in_Python/blob/main/08.png">
 </p>
