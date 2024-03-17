@@ -179,7 +179,7 @@ nx.draw(ans_one, with_labels=True, labels=labels, node_color=nodes_colours);
 MultiDiGraph with 167 nodes and 82927 edges
 ```
 
-### 🧸💬 Visulaization
+### 🧸💬 Visualization
 👧💬 🎈 One more example is event attention identification when you have a unique action from all events in the same property. Is there anyone or an external performance, and that can be used for system events investigation. </br>
 🐑💬 ➰ How many times to perform money withdraws account balance request to success ⁉️ It can determine attention not only from a responsive feedback system but IT communication. </br>
 🦭(1)💬 This kind of tracking can not be performed at the network level before node.js or pre-settings firewall rules or central logs services are available. Not only tracking by sequence number, authentication method and tokens, communication parameters, application ID, and application authentication but input sequence distribution value or prevent hacking system. </br>
@@ -225,7 +225,7 @@ nx.draw(ans_one, with_labels=True, labels=labels, node_color=nodes_colours);
 MultiDiGraph with 126 nodes and 82130 edges
 ```
 
-### 🧸💬 Visulaization
+### 🧸💬 Visualization - strongly connected graph.
 
 <p align="center" width="100%">
     <img width="100%" src="https://github.com/jkaewprateep/lessonfrom_Applied_Social_Network_Analysis_in_Python/blob/main/05.png">
