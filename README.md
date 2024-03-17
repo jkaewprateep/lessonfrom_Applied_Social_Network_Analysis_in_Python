@@ -47,6 +47,7 @@ Claude	        Snakes on a Plane
 #### 🧸💬 Example of graph problem by finding communication nodes or connected nodes.
 
 🐑💬 ➰ If Andy does not watch Anaconda then he does not have the same favorite movie as Claude but Frida, but Claude has his favorite movie Snakes on a Plane same as Georgia and Andy.  </br>
+🐯💬 If Vincent does not watch The Godfather but he can still strongly interact with Frida with 2 commons charing interest. </br>
 
 <p align="center" width="100%">
     <img width="100%" src="https://github.com/jkaewprateep/lessonfrom_Applied_Social_Network_Analysis_in_Python/blob/main/01.png">
