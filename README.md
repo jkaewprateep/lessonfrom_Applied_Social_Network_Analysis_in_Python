@@ -124,6 +124,8 @@ EdgeDataView([('Frida', 'Pablo', {'weight': 2}), ('Frida', 'Vincent', {'weight':
 - - -
 ## Networks connectivity, graph domain problem to solution precise identify of selection conditions by target properties, connectivity, and conditions.
 
+🦭💬 In complex connectivity nodes, we find identical nodes for the presence of a group or category identification. There is some potential to create of category when there are multiple of nodes that stand out for multiple times of selection and identification. That means they had property and their relationships can filter or work with conditions or rules. </br>
+
 ```
 print(ans_one)
 # 🧸💬 Define a graph from simple file, using file reader and Pandas.
