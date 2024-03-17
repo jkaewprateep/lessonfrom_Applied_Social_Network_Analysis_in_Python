@@ -131,7 +131,7 @@ EdgeDataView([('Frida', 'Pablo', {'weight': 2}), ('Frida', 'Vincent', {'weight':
 ### 🧸💬 Machine learning and vending machine, add preference to solved one Bath and two Bath coins exchange problem.
 
 <p align="center" width="100%">
-    <img width="100%" src="https://github.com/jkaewprateep/lessonfrom_Applied_Social_Network_Analysis_in_Python/blob/main/08.png">
+    <img width="60%" src="https://github.com/jkaewprateep/lessonfrom_Applied_Social_Network_Analysis_in_Python/blob/main/08.png">
 </p>
 
 ```
