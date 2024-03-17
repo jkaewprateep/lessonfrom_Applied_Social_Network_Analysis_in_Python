@@ -150,6 +150,8 @@ nodes_colours = nodes_colours + ( 167 - len(nodes_colours) ) * ["red"]
 nx.draw(ans_one, with_labels=True, labels=labels, node_color=nodes_colours);
 ```
 
+### 🧸💬 Output
+
 ```
 MultiDiGraph with 167 nodes and 82927 edges
 ```
@@ -182,6 +184,8 @@ nodes_colours = nodes_colours + ( 167 - len(nodes_colours) ) * ["red"]
 ### drawings
 nx.draw(ans_one, with_labels=True, labels=labels, node_color=nodes_colours);
 ```
+
+### 🧸💬 Output
 
 ```
 MultiDiGraph with 126 nodes and 82130 edges
@@ -219,6 +223,8 @@ nodes_colours = nodes_colours;
 nx.draw(ans_six, with_labels=True, labels=labels, node_color=nodes_colours);
 ```
 
+### 🧸💬 Output
+
 ```
 *** 1
 *** MultiDiGraph with 126 nodes and 82130 edges
@@ -255,6 +261,8 @@ nodes_colours = nodes_colours + (["red"] * 11 );
 nx.draw(ans_thirteen, with_labels=True, labels=labels, node_color=nodes_colours);
 ```
 
+### 🧸💬 Output
+
 ```
 Graph with 126 nodes and 3107 edges
 ```
@@ -264,3 +272,4 @@ Graph with 126 nodes and 3107 edges
 <p align="center" width="100%">
     <img width="100%" src="https://github.com/jkaewprateep/lessonfrom_Applied_Social_Network_Analysis_in_Python/blob/main/07.png">
 </p>
+
