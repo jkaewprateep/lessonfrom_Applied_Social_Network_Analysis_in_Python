@@ -309,3 +309,61 @@ Graph with 126 nodes and 3107 edges
     <img width="100%" src="https://github.com/jkaewprateep/lessonfrom_Applied_Social_Network_Analysis_in_Python/blob/main/07.png">
 </p>
 
+- - -
+
+## 🧸💬 Closeness centrality, and betweenness centrality. It is an adaptation to many problems for global and local communications level and ability, how the target nodes repeat the same property or generate the effects with the same amount of the inputs. In the assignment example of the email and social media message communications.
+
+```
+import matplotlib.pyplot as plt
+
+ans_two = answer_two();
+
+graph_betweenness_centrality = nx.betweenness_centrality(G1, k=None, normalized=True, weight=None, endpoints=False, seed=None);
+list_two = sorted( graph_betweenness_centrality, key=lambda x: graph_betweenness_centrality[x], reverse=True )[0:5]; 
+
+selected_G1 = [];
+for item in list_two :
+    selected_G1.append( list( G1 )[item - 1] );
+
+dataset = dataset.reset_index();
+dataset = dataset[["id", "Colours"]];
+dataset["Colours"] = dataset["id"] .apply( lambda x : "pink" if x in selected_G1 else "gray" );
+
+dataset = dataset[["id", "Colours"]];
+dataset = dataset.groupby(by="id").first();
+nodes_colours = list(dataset.iloc[:, 0].to_numpy());
+nodes_colours = nodes_colours + ( 1133 - 762 ) * ["gray"]
+
+G1_100 = list( G1 )[0:301];
+G1_100 = set( G1_100 );
+
+# nx.draw(G1, with_labels=True, labels=labels, node_color=nodes_colours);
+
+selected_G1 = [];
+list_two = sorted( graph_betweenness_centrality, key=lambda x: graph_betweenness_centrality[x], reverse=True );
+for i in range( 5 ):
+    
+    # selected_G1 = [];
+    selected_G1 = selected_G1 + list_two[ i * 10 : (i * 10) + 10]; 
+    # print( selected_G1 )
+
+    for item in selected_G1 :
+        # selected_G1.append( list( G1 )[item - 1] );
+        if item < len( nodes_colours ) :
+            nodes_colours[item] == "pink";
+    
+    nx.draw_networkx_nodes(G1_100, pos=nx.spring_layout(G1_100), label=labels, node_color=nodes_colours[0:301]);
+    plt.show();
+```
+
+<p align="center" width="100%">
+    <img width="70%" src="https://github.com/jkaewprateep/lessonfrom_Applied_Social_Network_Analysis_in_Python/blob/main/09.png">
+</p>
+
+<p align="left" width="100%">
+    <img width="19%" src="https://github.com/jkaewprateep/lessonfrom_Applied_Social_Network_Analysis_in_Python/blob/main/10.png">
+    <img width="19%" src="https://github.com/jkaewprateep/lessonfrom_Applied_Social_Network_Analysis_in_Python/blob/main/11.png">
+    <img width="19%" src="https://github.com/jkaewprateep/lessonfrom_Applied_Social_Network_Analysis_in_Python/blob/main/12.png">
+    <img width="19%" src="https://github.com/jkaewprateep/lessonfrom_Applied_Social_Network_Analysis_in_Python/blob/main/13.png">
+    <img width="19%" src="https://github.com/jkaewprateep/lessonfrom_Applied_Social_Network_Analysis_in_Python/blob/main/14.png">
+</p>
