@@ -394,36 +394,41 @@ selected_G1 = [];
 for item in list_two :
     selected_G1.append( list( G1 )[item - 1] );
 
-# 🧸💬 
+# 🧸💬 Reset the index and create an index column from the index value.
 dataset = dataset.reset_index();
-dataset = dataset[["id", "Colours"]];
+dataset = dataset[["id", "Colours"]];                                   # 🧸💬 Select column name id and Colours.
+# 🧸💬  Re-assign of Colours value by the selected node, pink is select otherwise gray.
 dataset["Colours"] = dataset["id"] .apply( lambda x : "pink" if x in selected_G1 else "gray" );
 
-dataset = dataset[["id", "Colours"]];
-dataset = dataset.groupby(by="id").first();
-nodes_colours = list(dataset.iloc[:, 0].to_numpy());
-nodes_colours = nodes_colours + ( 1133 - 762 ) * ["gray"]
+dataset = dataset[["id", "Colours"]];                                   # 🧸💬 Select column name id and Colours.
+dataset = dataset.groupby(by="id").first();                             # 🧸💬 Groupby id select first if duplivated.
+nodes_colours = list(dataset.iloc[:, 0].to_numpy());                    # 🧸💬 Transfrom to an array for plotting.
+nodes_colours = nodes_colours + ( 1133 - 762 ) * ["gray"]               # 🧸💬 Padding value for plotting function.
 
-G1_100 = list( G1 )[0:301];
-G1_100 = set( G1_100 );
+G1_100 = list( G1 )[0:301];                                             # 🧸💬 Scopes variances.
+G1_100 = set( G1_100 );                                                 # 🧸💬 Transfrom into single form.
 
 # nx.draw(G1, with_labels=True, labels=labels, node_color=nodes_colours);
 
-selected_G1 = [];
+selected_G1 = [];                                                       # 🧸💬 Instant of new list variable.
+# 🧸💬 Create an instant of list_two list from the graph_betweenness_centrality from the paragraph initial and sorted by sample value
+# from its array value in descending order.
 list_two = sorted( graph_betweenness_centrality, key=lambda x: graph_betweenness_centrality[x], reverse=True );
-for i in range( 5 ):
+
+for i in range( 5 ):                                                    # 🧸💬 Iterations of five.
     
     # selected_G1 = [];
-    selected_G1 = selected_G1 + list_two[ i * 10 : (i * 10) + 10]; 
+    selected_G1 = selected_G1 + list_two[ i * 10 : (i * 10) + 10];      # 🧸💬 Padding value for plot function.
     # print( selected_G1 )
 
-    for item in selected_G1 :
+    for item in selected_G1 :                                           # 🧸💬 Iterate for all items in the selected nodes list.
         # selected_G1.append( list( G1 )[item - 1] );
-        if item < len( nodes_colours ) :
-            nodes_colours[item] == "pink";
-    
+        if item < len( nodes_colours ) :                                # 🧸💬 If it is selected node.
+            nodes_colours[item] == "pink";                              # 🧸💬 Assign Pink colours.
+
+    # 🧸💬 Draws the selected nodes with position values, label property, and colours property.
     nx.draw_networkx_nodes(G1_100, pos=nx.spring_layout(G1_100), label=labels, node_color=nodes_colours[0:301]);
-    plt.show();
+    plt.show();                                                         # 🧸💬 Flush memory.
 ```
 
 <p align="left" width="100%">
