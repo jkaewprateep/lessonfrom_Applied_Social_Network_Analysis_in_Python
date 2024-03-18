@@ -313,18 +313,86 @@ Graph with 126 nodes and 3107 edges
 
 ## 🧸💬 Closeness centrality, and betweenness centrality. It is an adaptation to many problems for global and local communications level and ability, how the target nodes repeat the same property or generate the effects with the same amount of the inputs. In the assignment example of the email and social media message communications.
 
+💃( 👩‍🏫 )💬 The graph nodes had property and they had velocity, this property is difficult to determine and conclude into a qualitative value but we can observe this property by closeness centrality and the betweenness centrality, the property is not changed when these relationships remain. </br>
+🦤💬 External observation can find location, speed and velocity but internal observation finds the actions but momentum can be both. </br>
+🐑💬 ➰ That is because property changes create some work </br>
+
 ```
-import matplotlib.pyplot as plt
+import pandas as pd;                                                     # 🧸💬 Import data manager library.
 
-ans_two = answer_two();
+G1 = nx.read_gml('assets/friendships.gml')                               # 🧸💬 Import data from a dataset.
 
+ans_one = answer_one();                                                  # 🧸💬 Instant variable and assigned value from question one.
+print( ans_one )                                                         # 🧸💬 Print out the output return from the previous step.
+
+# 🧸💬 Define a graph from simple file, using file reader and Pandas.
+labels = {n: n for n in G1.nodes};                                       # 🧸💬 Create an array collection of node property from
+                                                                         # impoort dataset.
+
+nodes = pd.DataFrame( G1.nodes );                                        # 🧸💬 Create instant of dataframe with node property.
+
+# 🧸💬 Create an instant of a data frame from all node values with columns id, label, and properties.
+dataset = pd.DataFrame(G1.edges(data=True), columns=["id", "label", "properties"]);
+dataset = dataset.reset_index();                                         # 🧸💬 Reset the index of data frame, and reflect the index as a column.
+dataset = dataset[["index", "id", "label", "properties"]];               # 🧸💬 Selection of dataset columns by name.
+
+colours = ["red", "green", "blue", "yellow", "brown"];                   # 🧸💬 Create an array of colours name.
+# 🧸💬 Create a column Node and assigned property, true if it is node.
+dataset["Node"] = dataset["id"].apply( lambda x : True if x in labels.keys() else False );
+# 🧸💬 Create a column Colours and assigned colours property, by multiplication of 5 assigned node colours from the colours array.
+dataset["Colours"] = dataset["id"] .apply( lambda x : "purple" if x == 100 else colours[ int(x) % 5] );
+
+# 🧸💬 Sample of the dataset by head function.
+dataset.head()
+
+# 🧸💬 Select the dataset column, id and Colours.
+dataset = dataset[["id", "Colours"]];
+# 🧸💬 Aggregate data by groupby function target column id, select first if found duplicated.
+dataset = dataset.groupby(by="id").first();
+# 🧸💬 Select and transform the output from the dataset for colour property next use in the plotting function.
+nodes_colours = list(dataset.iloc[:, 0].to_numpy());
+# 🧸💬 Padding of nodes_colours array to have the same shape as graph value inputs.
+nodes_colours = nodes_colours + ( 1133 - 762 ) * ["red"]
+
+G1_100 = list( G1 )[0:101];                                              # 🧸💬 Scopes variances.
+G1_100 = set( G1_100 );                                                  # 🧸💬 Simplify the output as a single format.
+
+labels = set(list(labels)[0:101]);                                       # 🧸💬 Scopes variances.
+
+# nx.draw(G1, with_labels=True, labels=labels, node_color=nodes_colours);
+# 🧸💬 Draw the selected nodes with labels property and colours to display the velocity of the graph nodes.
+nx.draw_networkx_nodes(G1_100, pos=nx.spring_layout(G1_100), label=labels, node_color=nodes_colours[0:101])
+```
+
+### 🧸💬 Output
+
+```
+(0.0026501766784452294, 0.2654784240150094, 7.142902633244772e-05)
+<matplotlib.collections.PathCollection at 0x7f465017fc70>
+```
+
+### 🧸💬 Visulaization
+
+<p align="center" width="100%">
+    <img width="70%" src="https://github.com/jkaewprateep/lessonfrom_Applied_Social_Network_Analysis_in_Python/blob/main/09.png">
+</p>
+
+```
+import matplotlib.pyplot as plt                                          # 🧸💬 Import visualization library.
+
+ans_two = answer_two();                                                  # 🧸💬 Use the output answer from question #2.
+
+# 🧸💬 Find the graph betweenness centrality of import graph from nx.betweenness_centrality function returns an array collection.
 graph_betweenness_centrality = nx.betweenness_centrality(G1, k=None, normalized=True, weight=None, endpoints=False, seed=None);
+# 🧸💬 Sorted previous step return list from array value in descending order for the first 5 nodes found in list.
 list_two = sorted( graph_betweenness_centrality, key=lambda x: graph_betweenness_centrality[x], reverse=True )[0:5]; 
 
+# 🧸💬 Extract value from G1 graph by item id from list_two found in the previous step.
 selected_G1 = [];
 for item in list_two :
     selected_G1.append( list( G1 )[item - 1] );
 
+# 🧸💬 
 dataset = dataset.reset_index();
 dataset = dataset[["id", "Colours"]];
 dataset["Colours"] = dataset["id"] .apply( lambda x : "pink" if x in selected_G1 else "gray" );
@@ -355,10 +423,6 @@ for i in range( 5 ):
     nx.draw_networkx_nodes(G1_100, pos=nx.spring_layout(G1_100), label=labels, node_color=nodes_colours[0:301]);
     plt.show();
 ```
-
-<p align="center" width="100%">
-    <img width="70%" src="https://github.com/jkaewprateep/lessonfrom_Applied_Social_Network_Analysis_in_Python/blob/main/09.png">
-</p>
 
 <p align="left" width="100%">
     <img width="19%" src="https://github.com/jkaewprateep/lessonfrom_Applied_Social_Network_Analysis_in_Python/blob/main/10.png">
