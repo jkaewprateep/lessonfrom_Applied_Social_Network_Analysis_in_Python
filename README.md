@@ -315,7 +315,7 @@ Graph with 126 nodes and 3107 edges
 
 💃( 👩‍🏫 )💬 The graph nodes had property and they had velocity, this property is difficult to determine and conclude into a qualitative value but we can observe this property by closeness centrality and the betweenness centrality, the property is not changed when these relationships remain. </br>
 🦤💬 External observation can find location, speed and velocity but internal observation finds the actions but momentum can be both. </br>
-🐑💬 ➰ That is because property changes create some work </br>
+🐑💬 ➰ That is because property changes create some work. </br>
 
 ```
 import pandas as pd;                                                     # 🧸💬 Import data manager library.
@@ -367,7 +367,9 @@ nx.draw_networkx_nodes(G1_100, pos=nx.spring_layout(G1_100), label=labels, node_
 ### 🧸💬 Output
 
 ```
+🧸💬 ( centrality, closeness and betweenness )
 (0.0026501766784452294, 0.2654784240150094, 7.142902633244772e-05)
+🧸💬 Plotting object.
 <matplotlib.collections.PathCollection at 0x7f465017fc70>
 ```
 
