@@ -513,3 +513,4 @@ future_connections.head(10)
     <img width="33%" src="https://github.com/jkaewprateep/lessonfrom_Applied_Social_Network_Analysis_in_Python/blob/main/16.png">
     <img width="33%" src="https://github.com/jkaewprateep/lessonfrom_Applied_Social_Network_Analysis_in_Python/blob/main/17.png">
 </p>
+* Picture from the Internet.
