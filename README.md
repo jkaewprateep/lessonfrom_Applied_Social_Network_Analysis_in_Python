@@ -506,3 +506,10 @@ def salary_predictions():
 future_connections = pd.read_csv('assets/Future_Connections.csv', index_col=0, converters={0: eval})
 future_connections.head(10)
 ```
+
+🦤💬 WHO PLAY MY PHOTOGRAPH ⁉️ 🥺💬 Don't know 🧸💬 Don't know 🐱💬 Don't know 🐐💬 Don't know 🦭💬 Don't know 🐑💬 ➰ Don't know ...
+<p align="center" width="100%">
+    <img width="33%" src="https://github.com/jkaewprateep/lessonfrom_Applied_Social_Network_Analysis_in_Python/blob/main/15.png">
+    <img width="33%" src="https://github.com/jkaewprateep/lessonfrom_Applied_Social_Network_Analysis_in_Python/blob/main/16.png">
+    <img width="33%" src="https://github.com/jkaewprateep/lessonfrom_Applied_Social_Network_Analysis_in_Python/blob/main/17.png">
+</p>
