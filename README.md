@@ -440,3 +440,10 @@ for i in range( 5 ):                                                    # 🧸�
     <img width="19%" src="https://github.com/jkaewprateep/lessonfrom_Applied_Social_Network_Analysis_in_Python/blob/main/13.png">
     <img width="19%" src="https://github.com/jkaewprateep/lessonfrom_Applied_Social_Network_Analysis_in_Python/blob/main/14.png">
 </p>
+
+- - -
+
+## 🧸💬 Graph and prediction problem, the prediction function can be performed in both condition and graph mode. In the graph mode prediction, the strongest node will be selected for communication and estimate value.
+
+🧸💬 There should be multiple times of production output evaluation but thank you for the evaluation function for best path selection, strongest connection, and shared weight distribution </br> 
+🐑💬 ➰ There is an estimation step before saving the trained model, in some experiment a small value changes very little depending on the machine and environment and does not effect of the prediction result because it is less than 0.0000001 sometimes as you see from the Applied machine learning course, you need to saved and load trained model to have the same value for the course assignment validation. If do not the answer still correct but the instructor shows you of identification and workload property ( In calculation workload property is reserved for work that does not effects the work results ). </br> 
