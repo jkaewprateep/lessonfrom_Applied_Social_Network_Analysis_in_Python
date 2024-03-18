@@ -446,4 +446,56 @@ for i in range( 5 ):                                                    # 🧸�
 ## 🧸💬 Graph and prediction problem, the prediction function can be performed in both condition and graph mode. In the graph mode prediction, the strongest node will be selected for communication and estimate value.
 
 🧸💬 There should be multiple times of production output evaluation but thank you for the evaluation function for best path selection, strongest connection, and shared weight distribution </br> 
-🐑💬 ➰ There is an estimation step before saving the trained model, in some experiment a small value changes very little depending on the machine and environment and does not effect of the prediction result because it is less than 0.0000001 sometimes as you see from the Applied machine learning course, you need to saved and load trained model to have the same value for the course assignment validation. If do not the answer still correct but the instructor shows you of identification and workload property ( In calculation workload property is reserved for work that does not effects the work results ). </br> 
+🐑💬 ➰ There is an estimation step before saving the trained model, in some experiment a small value changes very little depending on the machine and environment and does not effect of the prediction result because it is less than 0.0000001 sometimes as you see from the Applied machine learning course, you need to saved and load trained model to have the same value for the course assignment validation. If do not the answer still correct but the instructor shows you to identification and workload property ( In calculation workload property is reserved for work that does not effects the work results ). </br> 
+
+### 🧸💬 Sample data query
+```
+list(G.nodes(data=True))[:5] 
+```
+
+### 🧸💬 Output
+```
+[(0, {'Department': 1, 'ManagementSalary': 0.0}),
+ (1, {'Department': 1, 'ManagementSalary': nan}),
+ (581, {'Department': 3, 'ManagementSalary': 0.0}),
+ (6, {'Department': 25, 'ManagementSalary': 1.0}),
+ (65, {'Department': 4, 'ManagementSalary': nan})]
+```
+
+### 🧸💬 Prediction example
+🐑💬 ➰ Using linear model to predict target value from connectivity barrier. </br>
+🧸💬 Review ```Applied Machine Learning in Python note``` for regression training. </br>
+
+```
+def salary_predictions():
+    from sklearn.preprocessing import StandardScaler                    # 🧸💬 Import Scaler linear model.
+    # 🧸💬 Import linear model classifier and Gradient Boosting classifier.
+    from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
+    
+    # 🧸💬 Create instant of dataframe
+    input_data = pd.DataFrame();
+    target = nx.get_node_attributes(G, 'ManagementSalary');
+    # 🧸💬 Return target node attributes from target node
+    
+    # 🧸💬 Calculation path, 🐑💬 ➰ The same ranges and possition in the networks and how it is close to central average?
+    degree_centrality = nx.degree_centrality(G)                         # 🧸💬 Find degree of centrality.
+    closeness_centrality = nx.closeness_centrality(G)                   # 🧸💬 Find closeness centrality.
+    betweenness_centrality = nx.betweenness_centrality(G)               # 🧸💬 Find betweeness centrality.
+    for node in target.keys():                                          # 🧸💬 Create data frame from target nodes.
+        row_features = pd.DataFrame([[degree_centrality[node], closeness_centrality[node],
+                                      betweenness_centrality[node], target[node]]], index=[node])
+        input_data = pd.concat([input_data, row_features], axis=0)
+    train_data = input_data[~input_data[3].isnull()]                    # 🧸💬 Create training input data reshape.
+    test_data = input_data[input_data[3].isnull()]                      # 🧸💬 Cretaet testing input data array.
+    GradientBoosting = GradientBoostingClassifier()                                  # 🧸💬 Create instant of Gradient Boosting classifier.
+    GradientBoosting.fit(train_data[[0,1,2]].values, train_data[3].values)           # 🧸💬 Training GradientBoosting classifier.
+    preds = GradientBoosting.predict_proba(test_data[[0,1,2]].values)[:,1]           # 🧸💬 Call prediction probability value function.
+    return pd.Series(preds, index=test_data.index)                      # 🧸💬 Return as index and predictions prob. value.
+```
+
+## 🧸💬 New connections dataset, working with graph predictions.
+
+```
+future_connections = pd.read_csv('assets/Future_Connections.csv', index_col=0, converters={0: eval})
+future_connections.head(10)
+```
