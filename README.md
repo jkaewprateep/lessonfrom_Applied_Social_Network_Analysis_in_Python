@@ -453,7 +453,7 @@ for i in range( 5 ):                                                    # 🧸�
 👨🏻‍🏫(1)💬 Possible and it is use ```eval()``` for responsive machine too. In some games, the evaluation method performs better not because of it is faster but it is game's player response to the environment.  </br>
 👨🏻‍🏫(2)💬 We removed ```eval()``` function and should use ```prediction()``` function for evaluation results because of it does not effect the speed response but performs testing as well.  </br>
 👨🏻‍🏫(1)💬 Yes, I am still use TF 1.x . </br>
-🐑💬 ➰ Sci-kei learn have regression function, I found it.  </br>
+🐑💬 ➰ Sci-kit learn have regression function, I found it.  </br>
 
 ### 🧸💬 Sample data query
 ```
