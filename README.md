@@ -375,7 +375,7 @@ nx.draw_networkx_nodes(G1_100, pos=nx.spring_layout(G1_100), label=labels, node_
 
 ### 🧸💬 Visulaization
 🐑💬 ➰ It is floating around and shining, they had velocity but had position value, colours, and the betweenness property from function. </br>
-🧸💬 Flaness ⁉️ 🦭💬 Perfect ‼️ </br>
+🧸💬 Flawness ⁉️ 🦭💬 Perfect ‼️ </br>
 
 <p align="center" width="100%">
     <img width="70%" src="https://github.com/jkaewprateep/lessonfrom_Applied_Social_Network_Analysis_in_Python/blob/main/09.png">
